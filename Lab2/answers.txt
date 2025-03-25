@@ -1,7 +1,0 @@
-1. No, Java does not allow constructors (or methods) with the same parameter types, even if the parameter names differ.
-
-2.Java is pass-by-value.
-
--After swap(jungleDVD, cinderellaDVD): Titles remain unchanged because object references are copied (the original references outside swap aren’t modified).
-
--After changeTitle(jungleDVD, cinderellaDVD.getTitle()): The title changes because dvd.setTitle() modifies the object’s state, but dvd = new DigitalVideoDisc(oldTitle) doesn’t affect the original reference.
