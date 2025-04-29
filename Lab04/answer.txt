@@ -1,0 +1,71 @@
+AWT (Abstract Window Toolkit) and Swing are both Java libraries for creating graphical user interfaces (GUIs), but they have significant differences in architecture, capabilities, and performance.
+
+Key Differences
+1. Architecture
+AWT: Uses native platform components (heavyweight)
+
+Directly calls the operating system's native GUI components
+
+Components are "heavyweight" (native peer components)
+
+Swing: Implements its own components (lightweight)
+
+Paints its own components using Java 2D
+
+Components are "lightweight" (no native peers)
+
+2. Look and Feel
+AWT: Always matches the native platform appearance
+
+Limited customization options
+
+Looks different across platforms
+
+Swing: Pluggable look and feel
+
+Can emulate native look or use Java's Metal look
+
+Consistent appearance across platforms
+
+Customizable themes
+
+3. Component Set
+AWT: Basic components (Button, Label, TextField, etc.)
+
+Limited to common components available on all platforms
+
+Swing: Extended component set (JTable, JTree, JTabbedPane, etc.)
+
+More sophisticated components
+
+Can extend and customize components easily
+
+4. Performance
+AWT: Generally faster for simple GUIs
+
+Native components are rendered by the OS
+
+Swing: Can be slower for complex GUIs
+
+Pure Java rendering overhead
+
+Performance improved with hardware acceleration
+
+5. Features
+AWT:
+
+Limited graphics capabilities
+
+No built-in double buffering
+
+Basic event handling
+
+Swing:
+
+Advanced graphics support
+
+Built-in double buffering
+
+Enhanced event handling
+
+MVC architecture for many components
